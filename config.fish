@@ -20,4 +20,10 @@ set fish_theme robbyrussell
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
-set PATH $HOME/.cask/bin $PATH
+set PATH $HOME/.cask/bin /usr/local/bin $PATH
+
+setenv JAVA_OPTS "-Xms2048m -Xmx2048m -XX:MaxPermSize=2048m"
+
+setenv _JAVA_OPTS $JAVA_OPTS
+
+setenv _JAVA_OPTIONS $JAVA_OPTS
