@@ -20,7 +20,9 @@ set fish_theme robbyrussell
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
-set PATH $HOME/.cask/bin /usr/local/bin $PATH
+setenv SDK_HOME $HOME/Downloads/adt-bundle-mac-x86_64-20131030/sdk
+
+set PATH $HOME/.cask/bin /usr/local/bin $SDK_HOME/platform-tools $PATH
 
 setenv JAVA_OPTS "-Xms2048m -Xmx2048m -XX:MaxPermSize=2048m"
 
