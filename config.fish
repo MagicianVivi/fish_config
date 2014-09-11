@@ -20,9 +20,13 @@ set fish_theme robbyrussell
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
+setenv TERM xterm-256color
+
+setenv EDITOR emacs
+
 setenv SDK_HOME $HOME/Downloads/adt-bundle-mac-x86_64-20131030/sdk
 
-set PATH $HOME/.cask/bin /usr/local/bin $SDK_HOME/platform-tools $PATH
+setenv PATH $HOME/.cask/bin /usr/local/bin $SDK_HOME/platform-tools ~/.gem/ruby/2.1.0/bin $PATH
 
 setenv JAVA_OPTS "-Xms2048m -Xmx2048m -XX:MaxPermSize=2048m"
 
